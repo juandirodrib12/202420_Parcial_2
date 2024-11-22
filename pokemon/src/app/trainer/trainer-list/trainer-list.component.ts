@@ -16,4 +16,8 @@ export class TrainerListComponent implements OnInit {
   ngOnInit() {
     this.trainerService.getTrainers().subscribe((trainers) => {this.trainers = trainers;});
   }
+
+  contarPokemons(trainer: Trainer): number {
+    return trainer.pokemons ? trainer.pokemons.length : 0;
+  }
 }
