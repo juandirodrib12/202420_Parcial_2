@@ -17,9 +17,4 @@ export class TrainerListComponent implements OnInit {
   ngOnInit() {
     this.trainerService.getTrainers().subscribe((trainers) => {this.trainers = trainers;});
   }
-
-  onSelected(trainer: Trainer) {
-    this.selected = true;
-    this.selectedTrainer = trainer;
-  }
 }
