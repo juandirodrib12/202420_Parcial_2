@@ -11,4 +11,12 @@ export class PokemonListComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  NivelPromedio(): number {
+    if (this.pokemonList.length === 0) {
+      return 0;
+    }
+    const totalLevel = this.pokemonList.reduce((sum, pokemon) => sum + pokemon.level, 0);
+    return totalLevel / this.pokemonList.length;
+  }
 }
