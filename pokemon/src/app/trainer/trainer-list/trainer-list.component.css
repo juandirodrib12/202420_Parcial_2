@@ -1,8 +1,52 @@
-tr:hover {
-    background-color: gold;
-    cursor: pointer;
-  }
+body {
+  background-color: #007bff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-thead {
-  background-color: gold;
+.trainer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.trainer-card {
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.trainer-card-header img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trainer-card-body {
+  padding: 15px;
+}
+
+.trainer-card-body h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.trainer-card-body p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.trainer-card-footer {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #000;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
 }

@@ -1,0 +1,21 @@
+.trainer-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .trainer-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .trainer-info {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .trainer-info p {
+    margin: 5px 0;
+  }  
